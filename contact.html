@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zero Absolutne</title>
+        <link rel="icon" href="./img/logo.png"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <script src="./script.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </head>
+    <body class="contact_body">
+
+        <nav>
+            <a href="index.html">
+                <div class="nav-logo">
+                    <img src="./img/logo.svg">
+                    <span>ZERO<br>ABSOLUTNE</span>
+                </div>
+            </a>
+            <ul>
+                <li>
+                    <a href="./theory.html">Teoria</a>
+                </li>
+                <li>
+                    <a href="./ex.html">Zadania</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Kontakt</a>
+                </li>
+            </ul>
+            <img class="menu-img" src="./img/menu.svg" onclick="openNav()">
+        </nav>
+
+        <div class="contact contact-hero">
+            <h1>Masz problem z zadaniem?</h1>
+            <form action="https://getform.io/f/ba8bf067-a1eb-4578-a98c-d345e89630af" method="POST" enctype="multipart/form-data">
+                <input name="email" type="email" class="email" placeholder="email" required>
+                <textarea name="body" class="details" placeholder="szczegóły zadania" required></textarea>
+                <label for="upload" class="upload">
+                        <img src="./img/upload.svg">
+                        <span class="file-name"></span>
+                        <input name="file" id="upload" type="file" onchange="uploadFile(this)">
+                </label>
+                <button class="contact-btn" type="submit">WYŚLIJ</button>
+            </form>
+        </div>
+
+        <div class="contact dm">
+            <h1>Lub wyślij do nas DM</h1>
+            <ul>
+                <a href="https://instagram.com/zero.absolutne" target="_blank">
+                    <li>
+                        <img src="./img/ig.svg">
+                        <span>@zero.absolutne</span>
+                    </li>
+                </a>
+                <a href="https://tiktok.com/@zero.absolutne" target="_blank">
+                    <li>
+                        <img src="./img/tiktok.svg">
+                        <span>@zero.absolutne</span>
+                    </li>
+                </a>
+                <a href="mailto:zgloszenia.zeroabsolutne@gmail.com" target="_blank">
+                    <li>
+                        <img src="./img/emal.svg">
+                        <span>zgloszenia&#8203;.zeroabsolutne&#8203;@gmail.com</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+        <footer>
+            <div class="feet">
+                <a href="./index.html">
+                    <span class="footer_logo">ZERO<br>ABSOLUTNE</span>
+                </a>
+                <span class="divider">|</span>
+                <div class="links">
+                    <span>
+                        <a href="./index.html">Strona główna</a>
+                    </span>
+                    <span>
+                        <a href="./theory.html">Teoria</a>
+                    </span>
+                    <span>
+                        <a href="./ex.html">Zadania</a>
+                    </span>
+                    <span>
+                        <a href="./contact.html">Kontakt</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+        <div class="nav">
+            <img src="./img/close.svg" onclick="closeNav()">
+            <ul>
+                <li>
+                    <a href="./index.html">Strona główna</a>
+                </li>
+                <li>
+                    <a href="./theory.html">Teoria</a>
+                </li>
+                <li>
+                    <a href="./ex.html">Zadania</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+
+    </body>
+</html>

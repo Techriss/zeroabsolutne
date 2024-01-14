@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+    <html lang="pl-PL">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zero Absolutne</title>
+        <link rel="icon" href="./img/logo.png"/>
+        <link rel="stylesheet" href="./style.css"/>
+        <script src="./script.js"></script>
+    </head>
+    <body class="ex_body">
+
+        <nav>
+            <a href="index.html">
+                <div class="nav-logo">
+                    <img src="./img/logo.svg">
+                    <span>ZERO<br>ABSOLUTNE</span>
+                </div>
+            </a>
+            <ul>
+                <li>
+                    <a href="./theory.html">Teoria</a>
+                </li>
+                <li>
+                    <a href="./ex.html">Zadania</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Kontakt</a>
+                </li>
+            </ul>
+            <img class="menu-img" src="./img/menu.svg" onclick="openNav()">
+        </nav>
+
+<!-- 
+        <ul class="chapters">
+            <a>
+                <li>
+                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(14%) sepia(67%) saturate(6293%) hue-rotate(339deg) brightness(103%) contrast(105%);">
+                    <span class="chapter">Kinematyka</span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(39%) sepia(72%) saturate(7468%) hue-rotate(300deg) brightness(99%) contrast(112%);">
+                    <span class="chapter">Dynamika</span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(18%) sepia(99%) saturate(5776%) hue-rotate(278deg) brightness(81%) contrast(115%);">
+                    <span class="chapter">Hydrostatyka</span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(11%) sepia(68%) saturate(6181%) hue-rotate(231deg) brightness(90%) contrast(91%);">
+                    <span class="chapter">Termodynamika</span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(46%) sepia(96%) saturate(1606%) hue-rotate(202deg) brightness(95%) contrast(90%);">
+                    <span class="chapter">Bryła Sztywna</span>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(54%) sepia(4%) saturate(5279%) hue-rotate(132deg) brightness(114%) contrast(84%);">
+                    <span class="chapter">Grawitacja</span>
+                </li>
+            </a>
+        </ul> -->
+
+
+
+
+
+        <div class="search">
+            <div>
+                <span>Dział</span>
+                <img src="./img/arrow.svg">
+                <div class="dropdown">
+                    <summary>
+                        <span>Dział</span>
+                        <img src="./img/arrow.svg">
+                    </summary>
+                    <details>
+                        <ul class="chapters">
+                            <a href="">
+                                <li>
+                                    <div class="square" style="background-color: #FF0644;"></div>
+                                    <span class="chapter">Kinematyka</span>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <div class="square" style="background-color: #FE13C0;"></div>
+                                    <span class="chapter">Dynamika</span>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <div class="square" style="background-color: #8903CE;"></div>
+                                    <span class="chapter">Hydrostatyka</span>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <div class="square" style="background-color: #1132A7;"></div>
+                                    <span class="chapter">Termodynamika</span>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <div class="square" style="background-color: #5785E7;"></div>
+                                    <span class="chapter">Bryła Sztywna</span>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li>
+                                    <div class="square" style="background-color: #3FB2B2;"></div>
+                                    <span class="chapter">Grawitacja</span>
+                                </li>
+                            </a>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class="sep"></div>
+            <div>
+                <span>Autor</span>
+                <img src="./img/arrow.svg">
+            </div>
+            <div class="sep"></div>
+            <div>
+                <span>Trudność</span>
+                <img src="./img/arrow.svg">
+            </div>
+            <div class="sep"></div>
+            <img src="./img/search.svg">
+        </div>
+
+
+        <div class="ex-wrapper">
+            <ul>
+                <a href="./ex/">
+                    <li class="ex">
+                        <div class="diff hard">
+                            <div class="square" style="background-color: #1132A7;"></div>
+                            <div class="square" style="background-color: #1132A7;"></div>
+                            <div class="square" style="background-color: #1132A7;"></div>
+                        </div>
+                        <span>CKE  |  Arkusz 2021  |  zadanie 1</span>
+                    </li>
+                </a>
+                <a href="./ex/">
+                    <li class="ex">
+                        <div class="diff medium">
+                            <div class="square" style="background-color: #1132A7;"></div>
+                            <div class="square" style="background-color: #1132A7;"></div>
+                            <div class="square" style="background-color: #1132A7;"></div>
+                        </div>
+                        <span>CKE  |  Arkusz 2021  |  zadanie 1</span>
+                    </li>
+                </a>
+                <a href="./ex/">
+                    <li class="ex">
+                        <div class="diff easy">
+                            <div class="square" style="background-color: #1132A7;"></div>
+                            <div class="square" style="background-color: #1132A7;"></div>
+                            <div class="square" style="background-color: #1132A7;"></div>
+                        </div>
+                        <span>CKE  |  Arkusz 2021  |  zadanie 1</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+        <footer>
+            <div class="feet">
+                <a href="./index.html">
+                    <span class="footer_logo">ZERO<br>ABSOLUTNE</span>
+                </a>
+                <span class="divider">|</span>
+                <div class="links">
+                    <span>
+                        <a href="./index.html">Strona główna</a>
+                    </span>
+                    <span>
+                        <a href="./theory.html">Teoria</a>
+                    </span>
+                    <span>
+                        <a href="./ex.html">Zadania</a>
+                    </span>
+                    <span>
+                        <a href="./contact.html">Kontakt</a>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+        <div class="nav">
+            <img src="./img/close.svg" onclick="closeNav()">
+            <ul>
+                <li>
+                    <a href="./index.html">Strona główna</a>
+                </li>
+                <li>
+                    <a href="./theory.html">Teoria</a>
+                </li>
+                <li>
+                    <a href="./ex.html">Zadania</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+
+    </body>
+</html>
