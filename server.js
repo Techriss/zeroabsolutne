@@ -12,7 +12,6 @@ const folderPath = path.join(__dirname, 'ex');
 
 app.use(express.static('public'));
 
-// files to twój endpoint możesz sobie nazwać jak chcesz 
 app.get('/files', (req, res) => {
   fs.readdir(folderPath, (err, files) => {
     if (err) {
@@ -20,7 +19,7 @@ app.get('/files', (req, res) => {
       return res.status(500).send('Błąd odczytu folderu z plikami');
     }
 
-    res.json({ files });
+    res.json({files});
   });
 });
 

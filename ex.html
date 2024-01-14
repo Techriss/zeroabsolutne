@@ -31,149 +31,99 @@
             <img class="menu-img" src="./img/menu.svg" onclick="openNav()">
         </nav>
 
-<!-- 
-        <ul class="chapters">
-            <a>
-                <li>
-                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(14%) sepia(67%) saturate(6293%) hue-rotate(339deg) brightness(103%) contrast(105%);">
-                    <span class="chapter">Kinematyka</span>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(39%) sepia(72%) saturate(7468%) hue-rotate(300deg) brightness(99%) contrast(112%);">
-                    <span class="chapter">Dynamika</span>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(18%) sepia(99%) saturate(5776%) hue-rotate(278deg) brightness(81%) contrast(115%);">
-                    <span class="chapter">Hydrostatyka</span>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(11%) sepia(68%) saturate(6181%) hue-rotate(231deg) brightness(90%) contrast(91%);">
-                    <span class="chapter">Termodynamika</span>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(46%) sepia(96%) saturate(1606%) hue-rotate(202deg) brightness(95%) contrast(90%);">
-                    <span class="chapter">Bryła Sztywna</span>
-                </li>
-            </a>
-            <a href="">
-                <li>
-                    <img src="./img/collapsed.svg" class="expand" style="filter: invert(54%) sepia(4%) saturate(5279%) hue-rotate(132deg) brightness(114%) contrast(84%);">
-                    <span class="chapter">Grawitacja</span>
-                </li>
-            </a>
-        </ul> -->
-
-
-
-
 
         <div class="search">
             <div>
-                <span>Dział</span>
-                <img src="./img/arrow.svg">
                 <div class="dropdown">
-                    <summary>
-                        <span>Dział</span>
-                        <img src="./img/arrow.svg">
-                    </summary>
-                    <details>
-                        <ul class="chapters">
-                            <a href="">
-                                <li>
-                                    <div class="square" style="background-color: #FF0644;"></div>
-                                    <span class="chapter">Kinematyka</span>
-                                </li>
-                            </a>
-                            <a href="">
-                                <li>
-                                    <div class="square" style="background-color: #FE13C0;"></div>
-                                    <span class="chapter">Dynamika</span>
-                                </li>
-                            </a>
-                            <a href="">
-                                <li>
-                                    <div class="square" style="background-color: #8903CE;"></div>
-                                    <span class="chapter">Hydrostatyka</span>
-                                </li>
-                            </a>
-                            <a href="">
-                                <li>
-                                    <div class="square" style="background-color: #1132A7;"></div>
-                                    <span class="chapter">Termodynamika</span>
-                                </li>
-                            </a>
-                            <a href="">
-                                <li>
-                                    <div class="square" style="background-color: #5785E7;"></div>
-                                    <span class="chapter">Bryła Sztywna</span>
-                                </li>
-                            </a>
-                            <a href="">
-                                <li>
-                                    <div class="square" style="background-color: #3FB2B2;"></div>
-                                    <span class="chapter">Grawitacja</span>
-                                </li>
-                            </a>
-                        </ul>
-                    </details>
+                    <div class="defaultChapter">
+                        <div class="square a0"></div>
+                        <span class="chapter" id="chapterValue">Dział</span>
+                    </div>
+                    <ul class="chapters">
+                        <li onclick="selectChapter(this)">
+                            <div class="square a0"></div>
+                            <span class="chapter">Dział</span>
+                        </li>
+                        <li onclick="selectChapter(this)">
+                            <div class="square a1"></div>
+                            <span class="chapter">Kinematyka</span>
+                        </li>
+                        <li onclick="selectChapter(this)">
+                            <div class="square a2"></div>
+                            <span class="chapter">Dynamika</span>
+                        </li>
+                        <li onclick="selectChapter(this)">
+                            <div class="square a3"></div>
+                            <span class="chapter">Hydrostatyka</span>
+                        </li>
+                        <li onclick="selectChapter(this)">
+                            <div class="square a4"></div>
+                            <span class="chapter">Termodynamika</span>
+                        </li>
+                        <li onclick="selectChapter(this)">
+                            <div class="square a5"></div>
+                            <span class="chapter">Bryła Sztywna</span>
+                        </li>
+                        <li onclick="selectChapter(this)">
+                            <div class="square a6"></div>
+                            <span class="chapter">Grawitacja</span>
+                        </li>
+                    </ul>
                 </div>
+                <img src="./img/arrow.svg" class="arrowChapters" onclick="toggleChapter();">
             </div>
             <div class="sep"></div>
             <div>
-                <span>Autor</span>
-                <img src="./img/arrow.svg">
+                <div class="dropdown dropdownAuthors">
+                    <span class="defaultAuthor" id="authorValue">Autor</span>
+                    <ul class="authors">
+                        <li onclick="selectAuthor(this)">
+                            <span>Autor</span>
+                        </li>
+                        <li onclick="selectAuthor(this)">
+                            <span>WSIP</span>
+                        </li>
+                        <li onclick="selectAuthor(this)">
+                            <span>Nowa Era</span>
+                        </li>
+                        <li onclick="selectAuthor(this)">
+                            <span>CKE</span>
+                        </li>
+                        <li onclick="selectAuthor(this)">
+                            <span>Kruczek</span>
+                        </li>
+                    </ul>
+                </div>
+                <img src="./img/arrow.svg" class="arrowAuthors" onclick="toggleAuthor();">
             </div>
             <div class="sep"></div>
             <div>
-                <span>Trudność</span>
-                <img src="./img/arrow.svg">
+                <div class="dropdown dropdownAuthors">
+                    <span class="defaultDiff" id="diffValue">Trudność</span>
+                    <ul class="diffs">
+                        <li onclick="selectDiff(this)">
+                            <span>Trudność</span>
+                        </li>
+                        <li onclick="selectDiff(this)">
+                            <span>Łatwe</span>
+                        </li>
+                        <li onclick="selectDiff(this)">
+                            <span>Średnie</span>
+                        </li>
+                        <li onclick="selectDiff(this)">
+                            <span>Trudne</span>
+                        </li>
+                    </ul>
+                </div>
+                <img src="./img/arrow.svg" class="arrowDiffs" onclick="toggleDiff();">
             </div>
             <div class="sep"></div>
-            <img src="./img/search.svg">
+            <img src="./img/search.svg" onclick="loadFiles();">
         </div>
 
 
         <div class="ex-wrapper">
-            <ul>
-                <a href="./ex/">
-                    <li class="ex">
-                        <div class="diff hard">
-                            <div class="square" style="background-color: #1132A7;"></div>
-                            <div class="square" style="background-color: #1132A7;"></div>
-                            <div class="square" style="background-color: #1132A7;"></div>
-                        </div>
-                        <span>CKE  |  Arkusz 2021  |  zadanie 1</span>
-                    </li>
-                </a>
-                <a href="./ex/">
-                    <li class="ex">
-                        <div class="diff medium">
-                            <div class="square" style="background-color: #1132A7;"></div>
-                            <div class="square" style="background-color: #1132A7;"></div>
-                            <div class="square" style="background-color: #1132A7;"></div>
-                        </div>
-                        <span>CKE  |  Arkusz 2021  |  zadanie 1</span>
-                    </li>
-                </a>
-                <a href="./ex/">
-                    <li class="ex">
-                        <div class="diff easy">
-                            <div class="square" style="background-color: #1132A7;"></div>
-                            <div class="square" style="background-color: #1132A7;"></div>
-                            <div class="square" style="background-color: #1132A7;"></div>
-                        </div>
-                        <span>CKE  |  Arkusz 2021  |  zadanie 1</span>
-                    </li>
-                </a>
-            </ul>
+            <ul id="files-list"></ul>
         </div>
 
 
@@ -217,6 +167,180 @@
                 </li>
             </ul>
         </div>
+
+
+
+
+
+        <script>
+
+
+            var defaultChapter = document.querySelector('.defaultChapter');
+            var chapters = document.querySelector('.chapters');
+            var arrowChapters = document.querySelector('.arrowChapters');
+
+            function toggleChapter() {
+                if (authors.classList.contains('active')) toggleAuthor();
+                if (diffs.classList.contains('active')) toggleDiff();
+
+                chapters.classList.toggle('active');
+                arrowChapters.style.transform = arrowChapters.style.transform == 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+            }
+
+            function selectChapter(li) {
+                const value = li.getElementsByTagName('span')[0].innerHTML;
+                defaultChapter.getElementsByTagName('span')[0].innerHTML = value;
+                defaultChapter.getElementsByTagName('div')[0].classList.add(li.getElementsByTagName('div')[0].classList[1]);
+                toggleChapter();
+            }
+
+
+
+
+            var defaultAuthor = document.querySelector('.defaultAuthor');
+            var authors = document.querySelector('.authors');
+            var arrowAuthors = document.querySelector('.arrowAuthors');
+
+            function toggleAuthor() {
+                if (chapters.classList.contains('active')) toggleChapter();
+                if (diffs.classList.contains('active')) toggleDiff();
+
+                authors.classList.toggle('active');
+                arrowAuthors.style.transform = arrowAuthors.style.transform == 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+            }
+
+            function selectAuthor(li) {
+                const value = li.getElementsByTagName('span')[0].innerHTML;
+                defaultAuthor.innerHTML = value;
+                toggleAuthor();
+            }
+  
+
+
+
+
+
+            var defaultDiff = document.querySelector('.defaultDiff');
+            var diffs = document.querySelector('.diffs');
+            var arrowDiffs = document.querySelector('.arrowDiffs');
+
+            function toggleDiff() {
+                if (chapters.classList.contains('active')) toggleChapter();
+                if (authors.classList.contains('active')) toggleAuthor();
+
+                diffs.classList.toggle('active');
+                arrowDiffs.style.transform = arrowDiffs.style.transform == 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+            }
+
+            function selectDiff(li) {
+                const value = li.getElementsByTagName('span')[0].innerHTML;
+                defaultDiff.innerHTML = value;
+                toggleDiff();
+            }
+
+
+            function nthIndex(str, pat, n) {
+                var L = str.length, i= -1;
+                while (n-- && i++ < L) {
+                    i = str.indexOf(pat, i);
+                    if (i < 0) break;
+                }
+                return i;
+            }
+
+
+
+            async function loadFiles() {
+
+                if (chapters.classList.contains('active')) toggleChapter();
+                if (authors.classList.contains('active')) toggleAuthor();
+                if (diffs.classList.contains('active')) toggleDiff();
+
+                try {
+                    const response = await fetch('http://localhost:3000/files');
+                    const data = await response.json();
+
+                    const chapterValue = document.getElementById('chapterValue').innerHTML;
+                    const authorValue = document.getElementById('authorValue').innerHTML;
+                    const diffValue = document.getElementById('diffValue').innerHTML;
+                
+                    const filesList = document.getElementById('files-list');
+                    filesList.innerHTML = '';
+                    data.files.forEach(fileName => {
+                        
+                        if (!fileName.endsWith('.html')) return;
+                        if (authorValue != 'Autor' && !fileName.includes(authorValue)) return;
+                        
+                        const difficulty = fileName[0];
+                        if (diffValue != 'Trudność') {
+                            if (difficulty == '1' && diffValue != 'Łatwe') return;
+                            if (difficulty == '2' && diffValue != 'Średnie') return;
+                            if (difficulty == '3' && diffValue != 'Trudne') return;
+                        }
+
+                        const chapterPath = `_${chapterValue}_`;
+                        if (chapterValue != "Dział" && !fileName.includes(chapterPath)) return;
+
+                        const listItem = document.createElement('li');
+                        const link = document.createElement('a');
+                        const span = document.createElement('span');
+                        const squares = document.createElement('div');
+                        const s1 = document.createElement('div');
+                        const s2 = document.createElement('div');
+                        const s3 = document.createElement('div');
+
+                        squares.classList.add('diff');
+
+
+                        if (difficulty == '1') squares.classList.add('easy');
+                        else if (difficulty == '2') squares.classList.add('medium');
+                        else if (difficulty == '3') squares.classList.add('hard');
+
+
+                        s1.classList.add('square');
+                        s2.classList.add('square');
+                        s3.classList.add('square');
+
+                        const exchapter = fileName.split('_')[1];
+                        var color = 'white';
+
+                        if (exchapter == 'Kinematyka') color = '#FF0644';
+                        else if (exchapter == 'Dynamika') color = '#FE13C0';
+                        else if (exchapter == 'Hydrostatyka') color = '#8903CE';
+                        else if (exchapter == 'Termodynamika') color = '#1132A7';
+                        else if (exchapter == 'Bryła Sztywna') color = '#5785E7';
+                        else if (exchapter == 'Grawitacja') color = '#3FB2B2';
+
+
+                        s1.style.backgroundColor = color;
+                        s2.style.backgroundColor = color;
+                        s3.style.backgroundColor = color;
+
+                        squares.appendChild(s1);
+                        squares.appendChild(s2);
+                        squares.appendChild(s3);
+
+                        
+                        link.href = `./ex/${fileName}`;
+                        span.textContent = fileName.slice(3 + exchapter.length, -5);
+                        listItem.classList.add('ex');
+                
+                        listItem.appendChild(squares);
+                        listItem.appendChild(span);
+                        link.appendChild(listItem);
+                
+                        filesList.appendChild(link);
+                    });
+                    } catch (error) {
+                        console.error('Błąd podczas pobierania nazw plików:', error);
+                }
+            }
+
+
+            document.addEventListener('DOMContentLoaded', loadFiles());
+
+            
+        </script>
 
     </body>
 </html>
