@@ -190,7 +190,7 @@
             function selectChapter(li) {
                 const value = li.getElementsByTagName('span')[0].innerHTML;
                 defaultChapter.getElementsByTagName('span')[0].innerHTML = value;
-                defaultChapter.getElementsByTagName('div')[0].classList.add(li.getElementsByTagName('div')[0].classList[1]);
+                defaultChapter.getElementsByTagName('div')[0].classList = `square ${li.getElementsByTagName('div')[0].classList[1]}`;
                 toggleChapter();
             }
 
@@ -257,7 +257,7 @@
                 if (diffs.classList.contains('active')) toggleDiff();
 
                 try {
-                    const response = await fetch('http://localhost:3000/files');
+                    const response = await fetch('./files');
                     const data = await response.json();
 
                     const chapterValue = document.getElementById('chapterValue').innerHTML;
