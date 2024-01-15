@@ -225,7 +225,7 @@ ul {
     overflow-y: hidden;
 }
 
-.hero-text>a>button {
+.hero-text>a>button, .hero-btn {
     background: transparent;
     border: 10px solid;
     border-image-slice: 1;
@@ -520,7 +520,6 @@ footer {
         font-size: 1.5rem;
         width: 15em;
         height: 5rem;
-        /* margin-top: -5%; */
     }
 
     .hero-arrow {
@@ -528,8 +527,6 @@ footer {
         width: 6%;
         margin-bottom: 10%;
         background: transparent;
-        /* position: relative;
-        bottom: 0; */
     }
 
     .lines {
@@ -554,6 +551,7 @@ footer {
     .about>div>p {
         font-size: 2rem;
         font-weight: 300;
+        margin-right: 0;
     }
 
     .grid {
