@@ -278,7 +278,7 @@
                     data.files.forEach(fileName => {
                         
                         if (!fileName.endsWith('.html')) return;
-                        if (authorValue != 'Autor' && !fileName.includes(authorValue)) return;
+                        if (authorValue != 'Autor' && !fileName.toLowerCase().includes(authorValue.toLowerCase())) return;
                         
                         const difficulty = fileName[0];
                         if (diffValue != 'Trudność') {
@@ -288,7 +288,7 @@
                         }
 
                         const chapterPath = `_${chapterValue}_`;
-                        if (chapterValue != "Dział" && !fileName.includes(chapterPath)) return;
+                        if (chapterValue != "Dział" && !fileName.toLowerCase().includes(chapterPath.toLowerCase())) return;
 
                         const listItem = document.createElement('li');
                         const link = document.createElement('a');
