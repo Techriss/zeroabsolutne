@@ -13,6 +13,7 @@
 .git
 .gitignore
 README.md
+.github/
 
 
 # Node.js dependencies:
