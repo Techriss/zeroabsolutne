@@ -50,6 +50,11 @@
         <priority>0.64</priority>
     </url>
     <url>
+        <loc>https://zeroabsolutne.pl/theory/elektrostatyka.html</loc>
+        <lastmod>1980-01-01T00:00:01+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
         <loc>https://zeroabsolutne.pl/theory/grawitacja.html</loc>
         <lastmod>1980-01-01T00:00:01+00:00</lastmod>
         <priority>0.64</priority>
@@ -223,6 +228,16 @@
     </url>
     <url>
         <loc>https://zeroabsolutne.pl/ex/2_Termodynamika_Zg%C5%82oszenie%20nr%201.html</loc>
+        <lastmod>1980-01-01T00:00:01+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://zeroabsolutne.pl/ex/2_Grawitacja_Nowa Era  -  Cześć 3  -  zadanie 11.3.23.html</loc>
+        <lastmod>1980-01-01T00:00:01+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://zeroabsolutne.pl/ex/3_Grawitacja_Nowa Era  -  Cześć 3  -  zadanie 11.6.21.html</loc>
         <lastmod>1980-01-01T00:00:01+00:00</lastmod>
         <priority>0.64</priority>
     </url>
