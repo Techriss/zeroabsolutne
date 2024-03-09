@@ -40,4 +40,4 @@ Projekt Zero Absolutne jest **open-source** i przyjmuje propozycje zmian w posta
     - tematy i ścieżki do plików SVG w theory-wrapper
 
 
-**każdy nowy plik HTML musi zostać dodany do ./sitemap.xml według wzoru**
+**każdy nowy plik HTML musi zostać dodany do ./public/sitemap.xml według wzoru**
