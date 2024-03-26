@@ -83,6 +83,10 @@
                             <div class="square a7"></div>
                             <span class="chapter">Elektrostatyka</span>
                         </li>
+                        <li onclick="selectChapter(this)">
+                            <div class="square a8"></div>
+                            <span class="chapter">Prąd Elektryczny</span>
+                        </li>
                     </ul>
                 </div>
                 <img src="./img/arrow.svg" class="arrowChapters" onclick="toggleChapter();" alt="expand chapter filter list">
@@ -329,6 +333,7 @@
                         else if (exchapter == 'Bryła Sztywna') color = '#5785E7';
                         else if (exchapter == 'Grawitacja') color = '#3FB2B2';
                         else if (exchapter == 'Elektrostatyka') color = '#05BB70';
+                        else if (exchapter == 'Prąd Stały') color = '#9FC031';
 
 
                         s1.style.backgroundColor = color;
