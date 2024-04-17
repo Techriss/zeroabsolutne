@@ -440,6 +440,12 @@ footer {
     font-weight: 300;
 }
 
+.zwzt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 
